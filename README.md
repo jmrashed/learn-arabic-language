@@ -1,3 +1,4 @@
+<img src="./learning-arabic-alphabet.png">
 # Learning Arabic Alphabet
 
 A web application designed to help users practice and learn the Arabic alphabet through various interactive features.
