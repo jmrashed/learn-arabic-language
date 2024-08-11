@@ -188,4 +188,25 @@ body {
   gap: 10px;
   text-align: center; 
 }
- 
+ .numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.number-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.arabic-number {
+  font-size: 24px;
+}
+
+.english-number {
+  font-size: 24px;
+}
