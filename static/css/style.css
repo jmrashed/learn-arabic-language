@@ -84,7 +84,9 @@ body {
   cursor: pointer;
   margin-right: 10px;
 }
-
+.min-height-60vh{
+  min-height: 60vh;;
+}
 .color-picker.active {
   border: 2px solid #000;
 }
@@ -110,6 +112,7 @@ body {
   background-color: #343a40;
   color: #fff;
   padding: 1rem;
+  min-width: 200px;
 }
 
 .sidebar h4 {
@@ -190,8 +193,9 @@ body {
 }
  .numbers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 25px;
 }
 
 .number-item {
@@ -201,6 +205,7 @@ body {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin: 25px;
 }
 
 .arabic-number {
@@ -234,4 +239,91 @@ body {
 .english-month {
   font-size: 20px;
   font-weight: bold;
+}
+
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+}
+
+.sidebar h4 {
+  padding: 15px;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #495057;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link i {
+  margin-right: 10px;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+  color: #343a40;
+}
+
+/* Main Content Styles */
+main {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 200px;
+  }
+
+  main {
+      margin-left: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  main {
+      margin-left: 0;
+  }
 }
