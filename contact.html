@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Learn Arabic Language</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .contact-header {
+            background: url('https://via.placeholder.com/1920x400') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .contact-header h1 {
+            font-size: 3rem;
+        }
+        .contact-form {
+            margin-top: 40px;
+        }
+        .contact-info {
+            margin-top: 40px;
+        }
+        .contact-info h4 {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Arabic Language</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Contact Header -->
+    <header class="contact-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="lead">We'd love to hear from you. Reach out to us with any questions or feedback!</p>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Send Us a Message</h2>
+                    <form action="submit_contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <h2>Contact Information</h2>
+                    <h4>Address</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Language St., Learning City, LC 12345</p>
+                    <h4>Phone</h4>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-8901</p>
+                    <h4>Email</h4>
+                    <p><i class="fas fa-envelope"></i> support@learnarabic.com</p>
+                    <h4>Follow Us</h4>
+                    <a href="#" class="btn btn-primary btn-lg"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="btn btn-primary btn-lg"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="btn btn-primary btn-lg"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Embed Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2>Find Us on the Map</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9162859272956!2d-122.08424948504029!3d37.42199977982546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb73a6c3b2b89%3A0x79cfef7f0d4a6b8!2sGoogleplex!5e0!3m2!1sen!2sus!4v1630427396792!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Learn Arabic. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
