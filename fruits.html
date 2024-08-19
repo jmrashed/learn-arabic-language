@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Fruits</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="static/css/style.css" />
+ 
+  </head>
+
+  <body>
+    <div class="d-flex">
+         <!-- Sidebar -->
+         <nav id="sidebar" class="sidebar">
+          <h4 class="text-center">Dashboard</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="draw.html">
+                <i class="fas fa-paint-brush"></i> Draw
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alphabet.html">
+                <i class="fas fa-box"></i> Alphabets
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="color.html">
+                <i class="fas fa-palette"></i> Colors
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="fruits.html">
+                <i class="fas fa-apple-alt"></i> Fruits
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="numbers.html">
+                <i class="fas fa-list"></i> Numbers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="months.html">
+                <i class="fas fa-calendar"></i> Months
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      <div id="content" class="w-100">
+        <!-- Topbar -->
+        <header
+          class="topbar d-flex justify-content-between align-items-center"
+        >
+          <h1 class="h4 mb-0">Fruits</h1>
+          <div>
+            <button class="btn btn-primary">
+              <i class="fas fa-bell"></i>
+            </button>
+            <button class="btn btn-secondary">
+              <i class="fas fa-user"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- Main Body -->
+        <main class="container mt-4">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header text-center">
+                  <h5>Common Fruits</h5>
+                </div>
+                <div class="card-body">
+                  <div class="fruits-grid">
+                    <!-- Fruit Items -->
+                    <div class="fruit-item" style="background-color: #ff9999;">
+                      <div class="fruit-name">تفاح (Tuffah)</div>
+                      <div class="fruit-english">Apple</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ffcc99;">
+                      <div class="fruit-name">موز (Mawz)</div>
+                      <div class="fruit-english">Banana</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ffccff;">
+                      <div class="fruit-name">عنب (Inab)</div>
+                      <div class="fruit-english">Grapes</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ccffcc;">
+                      <div class="fruit-name">برتقال (Burtuqal)</div>
+                      <div class="fruit-english">Orange</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ffff99;">
+                      <div class="fruit-name">ليمون (Laymun)</div>
+                      <div class="fruit-english">Lemon</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ccff99;">
+                      <div class="fruit-name">كمثرى (Kumathra)</div>
+                      <div class="fruit-english">Pear</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ffb3e6;">
+                      <div class="fruit-name">فراولة (Farawilah)</div>
+                      <div class="fruit-english">Strawberry</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #cce5ff;">
+                      <div class="fruit-name">أناناس (Ananas)</div>
+                      <div class="fruit-english">Pineapple</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ff9999;">
+                      <div class="fruit-name">رمان (Rumman)</div>
+                      <div class="fruit-english">Pomegranate</div>
+                    </div>
+                    <div class="fruit-item" style="background-color: #ffb3b3;">
+                      <div class="fruit-name">خوخ (Khawkh)</div>
+                      <div class="fruit-english">Peach</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <p class="mb-0">© 2024 <a href="https://rasheduzzaman.com">https://rasheduzzaman.com</a>. All rights reserved By <a href="https://github.com/jmrashed">jmrashed</a>.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
