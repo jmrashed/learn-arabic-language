@@ -1,4 +1,10 @@
-<img src="./learning-arabic-alphabet.png">
+<img src="./learn-arabic-language.png">
+
+![GitHub stars](https://img.shields.io/github/stars/jmrashed/learning-arabic-alphabet?style=social)
+![GitHub forks](https://img.shields.io/github/forks/jmrashed/learning-arabic-alphabet?style=social)
+![GitHub issues](https://img.shields.io/github/issues/jmrashed/learning-arabic-alphabet)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/jmrashed/learning-arabic-alphabet)
+![GitHub license](https://img.shields.io/github/license/jmrashed/learning-arabic-alphabet)
 
 # Learning Arabic Alphabet
 
