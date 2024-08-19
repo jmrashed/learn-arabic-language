@@ -1,208 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Arabic Language</title>
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: url('https://via.placeholder.com/1920x800') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .feature-description {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Learn Arabic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <body>
-    <div class="d-flex">
-      <!-- Sidebar -->
-      <nav id="sidebar" class="sidebar">
-        <h4 class="text-center">Dashboard</h4>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">
-              <i class="fas fa-home"></i> Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="draw.html">
-              <i class="fas fa-paint-brush"></i> Draw
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="alphabet.html">
-              <i class="fas fa-box"></i> Alphabets
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="numbers.html">
-              <i class="fas fa-list"></i> Numbers
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="months.html">
-              <i class="fas fa-calendar"></i> Months
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1>Unlock the Beauty of the Arabic Language</h1>
+            <p>Join our comprehensive courses to master Arabic quickly and effectively.</p>
+            <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </header>
 
-      <div id="content" class="w-100">
-        <!-- Topbar -->
-        <header
-          class="topbar d-flex justify-content-between align-items-center"
-        >
-          <h1 class="h4 mb-0">Dashboard</h1>
-          <div>
-            <button class="btn btn-primary">
-              <i class="fas fa-bell"></i>
-            </button>
-            <button class="btn btn-secondary">
-              <i class="fas fa-user"></i>
-            </button>
-          </div>
-        </header>
-
-        <!-- Main Body -->
-        <main class="container mt-4">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card mb-5 min-height-60vh">
-                <div class="card-header text-center">
-                  <h5>Practice Arabic Alphabet</h5>
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="feature-title">Comprehensive Courses</h3>
+                    <p class="feature-description">From beginner to advanced, we offer courses for all levels.</p>
                 </div>
-                <div class="card-body">
-                  <nav>
-                    <div
-                      class="nav nav-tabs nav-justified"
-                      id="nav-tab"
-                      role="tablist"
-                    >
-                      <a
-                        class="nav-link active"
-                        id="nav-writing-tab"
-                        data-bs-toggle="tab"
-                        href="#nav-writing"
-                        role="tab"
-                        aria-controls="nav-writing"
-                        aria-selected="true"
-                        >Writing</a
-                      >
-                      <a
-                        class="nav-link"
-                        id="nav-reading-tab"
-                        data-bs-toggle="tab"
-                        href="#nav-reading"
-                        role="tab"
-                        aria-controls="nav-reading"
-                        aria-selected="false"
-                        >Reading</a
-                      >
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
                     </div>
-                  </nav>
-                  <div class="tab-content mt-3" id="nav-tabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="nav-writing"
-                      role="tabpanel"
-                      aria-labelledby="nav-writing-tab"
-                    >
-                      <div class="text-center mb-4">
-                        <button
-                          class="btn btn-primary btn-lg"
-                          id="btn-random-writing"
-                        >
-                          <i class="fa fa-random"></i> Random Letter
-                        </button>
-                        <audio id="audio-writing" controls class="my-3">
-                          <source type="audio/mpeg" />
-                          Your browser does not support the audio element.
-                        </audio>
-                        <div
-                          class="accordion accordion-flush"
-                          id="accordion-flush"
-                        >
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                              <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse-writing"
-                                aria-expanded="false"
-                                aria-controls="flush-collapse-writing"
-                              >
-                                Show the Letter
-                              </button>
-                            </h2>
-                            <div
-                              id="flush-collapse-writing"
-                              class="accordion-collapse collapse"
-                              aria-labelledby="flush-headingOne"
-                              data-bs-parent="#accordion-flush"
-                            >
-                              <div class="accordion-body text-center">
-                                <img
-                                  id="image-writing"
-                                  alt="letter"
-                                  style="width: 200px; height: 200px"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <h3 class="feature-title">Expert Instructors</h3>
+                    <p class="feature-description">Learn from native speakers and experienced educators.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
                     </div>
-                    <div
-                      class="tab-pane fade"
-                      id="nav-reading"
-                      role="tabpanel"
-                      aria-labelledby="nav-reading-tab"
-                    >
-                      <div class="text-center mb-4">
-                        <button
-                          class="btn btn-primary btn-lg"
-                          id="btn-random-reading"
-                        >
-                          <i class="fa fa-random"></i> Random Letter
-                        </button>
-                        <img
-                          id="image-reading"
-                          class="my-3"
-                          style="width: 200px; height: 200px"
-                          alt="letter"
-                        />
-                        <audio id="audio-reading" controls>
-                          <source type="audio/mpeg" />
-                          Your browser does not support the audio element.
-                        </audio>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </div>
+                    <h3 class="feature-title">Interactive Lessons</h3>
+                    <p class="feature-description">Engage in real-life conversations and practice your skills.</p>
+                </div>
             </div>
-          </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-          <div class="container">
-            <p class="mb-0">© 2024 <a href="https://rasheduzzaman.com">https://rasheduzzaman.com</a>. All rights reserved By <a href="https://github.com/jmrashed">jmrashed</a>.</p>
-          </div>
-        </footer>
-      </div>
+        </div>
+    </section>
+<!-- About Us Section -->
+<section id="about-us" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 mb-4">
+                <h2 class="display-4">About Us</h2>
+                <p class="lead">Discover who we are and what drives us to help you learn Arabic effectively.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Our Mission</h3>
+                <p>Our mission is to provide high-quality Arabic language education to learners around the world. We strive to make learning Arabic accessible, engaging, and effective through innovative teaching methods and expert instructors.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Our Team</h3>
+                <p>Our team consists of native Arabic speakers and experienced educators who are passionate about teaching. Each member brings a wealth of knowledge and dedication to ensure that our students achieve their language learning goals.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Our Values</h3>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle"></i> Excellence: We are committed to delivering the highest quality of education.</li>
+                    <li><i class="fas fa-check-circle"></i> Integrity: We operate with transparency and honesty in all our interactions.</li>
+                    <li><i class="fas fa-check-circle"></i> Innovation: We embrace new technologies and methodologies to enhance learning experiences.</li>
+                    <li><i class="fas fa-check-circle"></i> Student-Centric: Our students are at the heart of everything we do. We tailor our approach to meet their unique needs.</li>
+                </ul>
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="static/js/app.js"></script>
-  </body>
+<!-- Why Choose Us Section -->
+<section id="why-choose-us" class="py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-md-12">
+                <h2 class="display-4">Why Choose Us?</h2>
+                <p class="lead">Here’s why we stand out in providing Arabic language education.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-primary">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chalkboard-teacher fa-3x mb-3 text-primary"></i>
+                        <h4 class="card-title">Experienced Instructors</h4>
+                        <p class="card-text">Our instructors are native speakers with extensive teaching experience, ensuring you get the best guidance possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-primary">
+                    <div class="card-body text-center">
+                        <i class="fas fa-book-open fa-3x mb-3 text-primary"></i>
+                        <h4 class="card-title">Comprehensive Resources</h4>
+                        <p class="card-text">We offer a wide range of resources, including interactive lessons, practice exercises, and cultural insights to enrich your learning experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-primary">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h4 class="card-title">Community Support</h4>
+                        <p class="card-text">Join a vibrant community of learners and get support through forums, study groups, and live sessions with fellow students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Course List Section -->
+<section id="course-list" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-md-12">
+                <h2 class="display-4">Our Courses</h2>
+                <p class="lead">Explore our diverse range of Arabic language courses designed to meet your learning needs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Course 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Course 1">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Beginner Arabic</h4>
+                        <p class="card-text">An introductory course designed for those new to Arabic. Learn the basics of reading, writing, and speaking.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Course 2">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Intermediate Arabic</h4>
+                        <p class="card-text">Build on your foundational skills with intermediate grammar, vocabulary, and conversational practice.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Course 3">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Advanced Arabic</h4>
+                        <p class="card-text">Master complex grammar and vocabulary, and refine your speaking and writing skills to a high level.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Instructors Section -->
+<section id="our-instructors" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-md-12">
+                <h2 class="display-4">Our Instructors</h2>
+                <p class="lead">Meet the experts who will guide you through your Arabic learning journey.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Instructor 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Instructor 1">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Dr. Ahmed Al-Mansoori</h4>
+                        <p class="card-text">Specializes in Modern Standard Arabic and Arabic Linguistics. With over 15 years of teaching experience, Dr. Al-Mansoori brings a deep understanding of Arabic grammar and syntax.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Instructor 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Instructor 2">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Ms. Layla Al-Sabah</h4>
+                        <p class="card-text">An expert in Arabic conversation and culture, Ms. Al-Sabah has a unique approach to teaching spoken Arabic and cultural nuances, making learning both effective and enjoyable.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Instructor 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Instructor 3">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Dr. Omar Al-Khalid</h4>
+                        <p class="card-text">With a focus on Arabic literature and history, Dr. Al-Khalid offers in-depth knowledge of classical and modern Arabic texts, providing a rich learning experience.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-md-12">
+                <h2 class="display-4">What Our Students Say</h2>
+                <p class="lead">Hear from our students about their experiences learning Arabic with us.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Testimonial 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-light">
+                    <div class="card-body text-center">
+                        <p class="card-text">"The Arabic courses offered here are outstanding. The instructors are knowledgeable, and the lessons are engaging. I’ve made significant progress in a short time!"</p>
+                        <footer class="blockquote-footer">Jane Doe <cite title="Source Title">Student</cite></footer>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-light">
+                    <div class="card-body text-center">
+                        <p class="card-text">"I appreciate the structured approach and the supportive community. The interactive lessons and feedback from teachers have been incredibly helpful."</p>
+                        <footer class="blockquote-footer">John Smith <cite title="Source Title">Student</cite></footer>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-light">
+                    <div class="card-body text-center">
+                        <p class="card-text">"The flexibility of the online courses allowed me to learn at my own pace. The content is well-organized, and the resources are top-notch."</p>
+                        <footer class="blockquote-footer">Emily Johnson <cite title="Source Title">Student</cite></footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Learn Arabic. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
 </html>
