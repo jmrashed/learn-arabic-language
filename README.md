@@ -41,18 +41,45 @@ A web application designed to help users practice and learn the Arabic alphabet 
 Here is an overview of the project directory:
 
 ```
-practice-arabic-alphabet-main/
-│
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── letters/
-│
-├── alphabet.html
-├── draw.html
+learn-arabic-language/
+├── LICENSE.txt
+├── README.md
+├── aboutus.html
+├── assets/
+��   ├── css/
+��   ├── style.css
+��   ├── images/
+├── cart.html
+├── checkout.html
+├── contact.html
+├── courses.html
+├── dashboard/
+��   ├── BeginnerArabic.html
+��   ├── alphabet.html
+��   ├── color.html
+��   ├── draw.html
+��   ├── fish.html
+��   ├── flowers.html
+��   ├── fruits.html
+��   ├── index.html
+��   ├── months.html
+��   ├── numbers.html
+��   ├── static/
+��   ├── css/
+��   ├── style.css
+��   ├── js/
+��   ├── app.js
+��   ├── letters/
+��   ├── audios/
+��   ├── images/
+��   ├── vocabularies.html
 ├── favicon.ico
+├── forgot-password.html
 ├── index.html
-└── README.md
+├── login.html
+├── order-placed.html
+├── register.html
+├── reset-password.html
 ```
 
 
