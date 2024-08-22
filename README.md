@@ -46,33 +46,33 @@ learn-arabic-language/
 ├── README.md
 ├── aboutus.html
 ├── assets/
-��   ├── css/
-��   ├── style.css
-��   ├── images/
+      ├── css/
+      ├── style.css
+      ├── images/
 ├── cart.html
 ├── checkout.html
 ├── contact.html
 ├── courses.html
 ├── dashboard/
-��   ├── BeginnerArabic.html
-��   ├── alphabet.html
-��   ├── color.html
-��   ├── draw.html
-��   ├── fish.html
-��   ├── flowers.html
-��   ├── fruits.html
-��   ├── index.html
-��   ├── months.html
-��   ├── numbers.html
-��   ├── static/
-��   ├── css/
-��   ├── style.css
-��   ├── js/
-��   ├── app.js
-��   ├── letters/
-��   ├── audios/
-��   ├── images/
-��   ├── vocabularies.html
+      ├── BeginnerArabic.html
+      ├── alphabet.html
+      ├── color.html
+      ├── draw.html
+      ├── fish.html
+      ├── flowers.html
+      ├── fruits.html
+      ├── index.html
+      ├── months.html
+      ├── numbers.html
+      ├── static/
+      ├── css/
+      ├── style.css
+      ├── js/
+      ├── app.js
+      ├── letters/
+      ├── audios/
+      ├── images/
+      ├── vocabularies.html
 ├── favicon.ico
 ├── forgot-password.html
 ├── index.html
