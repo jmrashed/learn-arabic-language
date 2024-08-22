@@ -65,10 +65,10 @@ learn-arabic-language/
       ├── months.html
       ├── numbers.html
       ├── static/
-      ├── css/
-      ├── style.css
-      ├── js/
-      ├── app.js
+         ├── css/
+         ├── style.css
+         ├── js/
+         ├── app.js
       ├── letters/
       ├── audios/
       ├── images/
